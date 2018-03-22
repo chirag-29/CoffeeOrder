@@ -20,31 +20,36 @@ import java.text.NumberFormat;
 /**
  * This app displays an order form to order coffee.
  */
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
-    Button bu;
+public class MainActivity extends AppCompatActivity{
+   // Button bu;
     EditText edit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        bu=(Button)findViewById(R.id.button);
+        //bu=(Button)findViewById(R.id.button);
         edit=(EditText)findViewById(R.id.et);
-        bu.setOnClickListener(this);
+        //bu.setOnClickListener(this);
 
     }
 
-    @Override
-    public void onClick(View view)
-    {
-        if(view.getId()==R.id.button)
-        {
-            String val=edit.getText().toString();
-            Intent intent=new Intent(MainActivity.this, com.example.android.coffeeorder.Main2.class);
-            intent.putExtra("val1",val);
-            startActivity(intent);
-        }
+//    @Override
+//    public void onClick(View view)
+//    {
+//        if(view.getId()==R.id.button)
+//        {
+//            String val=edit.getText().toString();
+//            Intent intent=new Intent(MainActivity.this, com.example.android.coffeeorder.Main2.class);
+//            intent.putExtra("val1",val);
+//            startActivity(intent);
+//        }
+//
+//    }
+//
 
-    }
+
+
+
     int number=2;
 
     /**
